@@ -9,7 +9,6 @@ class Category(db.Model):
         return self.category_name
 
 
-
 class Task(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     task_name = db.Column(db.String(50), unique=True, nullable=False)
